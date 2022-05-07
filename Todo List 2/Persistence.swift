@@ -13,9 +13,14 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
+        let titles = [
+            "Testing", "Go shopping", "Typing", "Have lunch", "Do homework", "Driving", "Go swimming", "Play football", "Go home", "Go to school"
+        ]
         for _ in 0..<10 {
             let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            newItem.id = UUID()
+            newItem.startDate = Date()
+            newItem.title = titles.randomElement()!
         }
         do {
             try viewContext.save()

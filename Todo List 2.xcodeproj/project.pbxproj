@@ -13,6 +13,8 @@
 		DCC933F3282678C30048E384 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC933F2282678C30048E384 /* Preview Assets.xcassets */; };
 		DCC933F5282678C30048E384 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC933F4282678C30048E384 /* Persistence.swift */; };
 		DCC933F8282678C30048E384 /* Todo_List_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCC933F6282678C30048E384 /* Todo_List_2.xcdatamodeld */; };
+		DCC93401282678D90048E384 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC93400282678D90048E384 /* CloudKit.framework */; };
+		DCC934032826796B0048E384 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC934022826796B0048E384 /* AddItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DCC933F4282678C30048E384 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		DCC933F7282678C30048E384 /* Todo_List_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todo_List_2.xcdatamodel; sourceTree = "<group>"; };
 		DCC933F9282678C30048E384 /* Todo_List_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Todo_List_2.entitlements; sourceTree = "<group>"; };
+		DCC93400282678D90048E384 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DCC934022826796B0048E384 /* AddItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC93401282678D90048E384 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				DCC933EA282678C00048E384 /* Todo List 2 */,
 				DCC933E9282678C00048E384 /* Products */,
+				DCC933FF282678D90048E384 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +64,7 @@
 			children = (
 				DCC933EB282678C00048E384 /* Todo_List_2App.swift */,
 				DCC933ED282678C00048E384 /* ContentView.swift */,
+				DCC934022826796B0048E384 /* AddItemView.swift */,
 				DCC933EF282678C30048E384 /* Assets.xcassets */,
 				DCC933F4282678C30048E384 /* Persistence.swift */,
 				DCC933F9282678C30048E384 /* Todo_List_2.entitlements */,
@@ -73,6 +80,14 @@
 				DCC933F2282678C30048E384 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCC933FF282678D90048E384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCC93400282678D90048E384 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +164,7 @@
 				DCC933EE282678C00048E384 /* ContentView.swift in Sources */,
 				DCC933F8282678C30048E384 /* Todo_List_2.xcdatamodeld in Sources */,
 				DCC933EC282678C00048E384 /* Todo_List_2App.swift in Sources */,
+				DCC934032826796B0048E384 /* AddItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
